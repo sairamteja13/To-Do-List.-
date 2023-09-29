@@ -1,0 +1,183 @@
+/* heading starts here/ */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heading{
+    background-color: #ffb347;
+    height: 60px;
+    margin-bottom:20px ;
+    width: 100%;
+}    
+
+.heading h1{
+    color: azure;
+    font-weight:bolder;
+    font-size: 24px;
+    text-align: center;
+    padding: 4px;
+}
+
+.heading p{
+    margin-top: 2px;
+    color: azure;
+    text-align: center;
+    font-size: 12px;
+}
+
+.fa-heart{
+    color: red;
+    
+}
+
+/* dateholder */
+
+.datecontainer{
+    position: relative; 
+    
+    display: flex;
+   
+    justify-content:space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.todaysdate{
+    position: relative;
+    /* left: 100px; */
+    margin-bottom: 10px;
+
+}
+
+/* todo form starts here */
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+#todoform{
+    width: 650px;
+    height: 40px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: none;
+    padding-left: 15px;
+    border: 2px solid ;
+}
+
+#add{
+    color: cadetblue;
+    background-color: azure;
+    font-weight: bolder;
+    width: 100px;
+    height: 43px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: background-color 0.5s , color 0.5s;
+ 
+}
+
+#add:hover{
+    color: azure;
+    background-color: cadetblue;
+}
+
+
+/* listholder start */
+
+.listcontainer{
+    position: relative;
+    margin-top: 20px;
+    
+    /* flex-grow: 1; */
+    
+}
+
+#list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    flex-direction: column;
+    align-content: center;
+}
+
+.liststyle{
+    margin-top: 5px;
+    width: 600px;
+    height: 50px; 
+    border: thin solid black;
+    list-style: none;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#listitems{
+    flex-basis: 65%;
+    /* margin-top: 14px;
+    margin-left: 10px; */  
+    
+    
+}
+
+.editbtn,.strikebtn{ 
+    
+    width: 20px;
+    height: 40px;
+    /* margin-top: 5px;
+    margin-right: 3px; */
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.editbtn:hover,.strikebtn:hover{
+    background-color: #ffb347;
+
+}
+.editbtn{
+    flex-basis: 10%;
+}
+
+.strikebtn{
+    flex-basis: 10%;
+}
+
+.deletebtn{
+    flex-basis: 5%;
+    transition: background-color 0.3s , color 0.5s;
+    height: 34px;
+    /* margin-top: 7px;
+    margin-left: 5px; */
+    border-radius: 15%;
+}
+
+.deletebtn:hover{
+    background-color: #d9534f;
+    color: aliceblue;
+}
+
+@media only screen and (max-width:600px){
+    #list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        flex-direction: row;
+        align-content: center;
+    }
+    
+}

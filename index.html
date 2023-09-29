@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TO-DO list </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="heading">
+        <h1>THE TO-DO LIST</h1>
+        <p>Made by SaiRam Teja</p>
+    </header>
+
+    <div class="datecontainer">
+        <div class="todaysdate" id="todaysdate">Date : </div>
+    </div>
+
+    <div class="container">
+
+        <input type="text" placeholder="What do You want to do today" id="todoform" name="">
+        <button id="add">Add</button>
+
+    </div>
+
+    <div class="listcontainer">
+        <ul id="list">
+            <li id="liststart" class="liststyle">
+                <button class="deletebtn" id="deletebtn" onclick="deletelist(this)">X</button>
+                <h4 id="listitems">Task 1</h4>
+                <button id="editbtn" class="editbtn" onclick="editlist(this)">Edit</button>
+                <button id="strikebtn" class="strikebtn" onclick="strikelist(this)">Strike</button>
+                
+            </li>
+            
+        </ul>
+    </div>
+
+    
+    <script src="todolist.js"></script>
+
+</body>
+
+</html>
